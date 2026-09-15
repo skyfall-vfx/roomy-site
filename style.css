@@ -1,0 +1,31 @@
+:root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #ffffff; --card: #f5f5f7; --accent: #5b5bd6; --line: #e5e5ea; }
+@media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #111114; --card: #1c1c21; --accent: #8e8ef2; --line: #2c2c33; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Helvetica Neue", sans-serif; }
+header { border-bottom: 1px solid var(--line); }
+header .inner { display: flex; align-items: center; gap: 12px; max-width: 760px; margin: 0 auto; padding: 14px 20px; }
+header .brand { font-weight: 700; text-decoration: none; color: var(--fg); font-size: 18px; }
+header nav { margin-left: auto; display: flex; gap: 16px; font-size: 14px; }
+header nav a, .lang a { color: var(--muted); text-decoration: none; }
+header nav a:hover, .lang a:hover { color: var(--accent); }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 22px 0 6px; }
+p, li { color: var(--fg); }
+.muted { color: var(--muted); }
+.lang { font-size: 14px; margin: 0 0 24px; }
+.lang span { color: var(--line); margin: 0 8px; }
+section.language { padding-top: 8px; }
+section.language + section.language { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 24px; }
+.card { background: var(--card); border-radius: 12px; padding: 16px 18px; margin: 12px 0; }
+code { font: 14px ui-monospace, "SF Mono", Menlo, monospace; background: var(--card); padding: 1px 5px; border-radius: 5px; }
+a { color: var(--accent); }
+footer { max-width: 760px; margin: 0 auto; padding: 0 20px 40px; color: var(--muted); font-size: 13px; }
+.hero { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; margin-bottom: 28px; }
+.hero img { width: 96px; height: 96px; border-radius: 22px; }
+.points { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 20px 0; }
+.points .card { margin: 0; }
+.points h3 { margin: 0 0 4px; font-size: 16px; }
+dl dt { font-weight: 600; margin-top: 14px; }
+dl dd { margin: 4px 0 0; color: var(--fg); }
