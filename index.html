@@ -3,60 +3,196 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roomy — Mac 저장 공간을 이해하고, 안전하게 되찾기</title>
-<meta name="description" content="Roomy는 Mac의 저장 공간을 이해하기 쉽게 보여 주고, 검토한 것만 안전하게 정리하는 앱입니다. 구독 없음, 되돌릴 수 있음, 겁주지 않음.">
+<title>Roomy Cleaner — Mac 저장 공간을 이해하고, 안전하게 되찾기</title>
+<meta name="description" content="Roomy Cleaner는 Mac의 저장 공간을 이해하기 쉽게 보여 주고, 검토한 것만 안전하게 정리하는 앱입니다. 구독 없음, 되돌릴 수 있음, 겁주지 않음. Mac App Store에서 다운로드.">
+<meta property="og:title" content="Roomy Cleaner for Mac">
+<meta property="og:description" content="No subscription. Reversible. No scare tactics. A Mac cleanup app that explains before it removes.">
+<meta property="og:image" content="https://skyfall-vfx.github.io/roomy-site/img/en-01.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js" defer></script>
 </head>
 <body>
 <header><div class="inner">
-  <a class="brand" href="./">Roomy</a>
-  <nav><a href="support.html">지원 · Support</a><a href="privacy.html">개인정보 · Privacy</a></nav>
+  <a class="brand" href="./"><img src="icon.png" alt="">Roomy Cleaner</a>
+  <nav>
+    <a href="support.html">지원 · Support</a>
+    <a href="privacy.html">개인정보 · Privacy</a>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </nav>
 </div></header>
 <main>
-<p class="lang"><a href="#ko">한국어</a><span>|</span><a href="#en">English</a></p>
 
-<section class="language" id="ko">
+<!-- ============================ 한국어 ============================ -->
+<section class="language" id="ko" data-title-ko="Roomy Cleaner — Mac 저장 공간을 이해하고, 안전하게 되찾기" hidden>
   <div class="hero">
-    <img src="icon.png" alt="Roomy 아이콘">
-    <div>
+    <div class="copy">
       <h1>Mac 저장 공간을 이해하고, 안전하게 되찾기</h1>
-      <p class="muted">구독 없음 · 되돌릴 수 있음 · 겁주지 않음</p>
+      <p class="tagline">구독 없음 · 되돌릴 수 있음 · 겁주지 않음</p>
+      <p class="lede">Roomy는 무엇이 공간을 차지하는지 보여 주고, 사용자가 검토한 것만 정리합니다. 옮긴 파일은 30일 동안 보관함에 남아 언제든 되돌릴 수 있습니다.</p>
+      <div class="cta">
+        <a class="badge" href="https://apps.apple.com/app/id6812335900" rel="noopener"><span class="apple">&#63743;</span><span><small>Mac App Store에서</small><strong>다운로드</strong></span></a>
+        <span class="note">무료로 시작 · Pro는 US$29.99 한 번 결제 · Apple Silicon · macOS 14 이상</span>
+      </div>
+    </div>
+    <img class="shot" src="img/ko-01.jpg" width="1440" height="900" alt="Roomy 홈 화면: 디스크 사용량과 확보 가능한 공간, 제안 목록">
+  </div>
+
+  <div class="pillars">
+    <div class="card"><h3>삭제 전에 설명합니다</h3><p>각 항목이 무엇인지, 왜 지워도 되는지 먼저 보여 줍니다. "위험" 경고나 속도 향상 주장은 없습니다.</p></div>
+    <div class="card"><h3>검토 없이 지우지 않습니다</h3><p>기본으로는 안전한 항목만 선택되고, 정리 버튼을 누르기 전까지 아무것도 바뀌지 않습니다.</p></div>
+    <div class="card"><h3>모든 것을 되돌릴 수 있습니다</h3><p>Roomy가 옮긴 파일은 보관함에 30일 동안 남습니다. 한 번의 클릭으로 원래 자리로 돌아갑니다.</p></div>
+  </div>
+
+  <h2>무엇을 찾아 주나</h2>
+  <div class="features">
+    <div class="feature">
+      <img src="img/ko-02.jpg" width="1440" height="900" alt="클린 화면" loading="lazy">
+      <div class="text"><h3>클린</h3><p>캐시, 로그, 휴지통, Xcode 빌드 산출물, 오래된 다운로드, 대용량 파일, 중복 파일. 항목마다 크기와 날짜, 지워도 되는 이유를 함께 보여 줍니다.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/ko-03.jpg" width="1440" height="900" alt="앱 화면" loading="lazy">
+      <div class="text"><h3>앱</h3><p>설치된 앱의 크기와 마지막 사용일, 지운 앱이 남긴 잔여물, 로그인 시 자동 실행되는 항목과 그 서명 상태.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/ko-04.jpg" width="1440" height="900" alt="개인정보 화면" loading="lazy">
+      <div class="text"><h3>개인정보</h3><p>브라우저별 캐시, 방문 기록, 쿠키, 확장 프로그램, 시작 페이지 설정. 브라우저마다 따로 고를 수 있습니다.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/ko-05.jpg" width="1440" height="900" alt="공간 지도 화면" loading="lazy">
+      <div class="text"><h3>공간 지도</h3><p>디스크 전체를 한눈에 보는 지도. 종류, 정리 가능 여부, 지난번과 비교한 변화로 색을 입힙니다.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/ko-06.jpg" width="1440" height="900" alt="보관함 화면" loading="lazy">
+      <div class="text"><h3>보관함</h3><p>Roomy가 옮긴 모든 것이 여기 있습니다. 복원하거나, 확인한 뒤 비우거나, 보관 기간이 지나면 자동으로 정리됩니다.</p></div>
     </div>
   </div>
-  <p>Roomy는 캐시, 로그, 오래된 다운로드, 중복 파일, 남은 앱 잔여물처럼 공간을 차지하는 것들을 찾아 보여 줍니다. 무엇인지 설명한 뒤에야 지우고, 지운 것은 보관함(Vault)에 30일 동안 남아 언제든 되돌릴 수 있습니다.</p>
-  <div class="points">
-    <div class="card"><h3>클린</h3><p class="muted">캐시·로그·휴지통·빌드 산출물·대용량 파일·중복 파일. 기본은 안전한 항목만 선택됩니다.</p></div>
-    <div class="card"><h3>앱</h3><p class="muted">설치 앱과 크기, 마지막 사용일, 남은 잔여물, 로그인 시 자동 실행 항목의 서명 상태.</p></div>
-    <div class="card"><h3>개인정보</h3><p class="muted">브라우저별 캐시·방문 기록·쿠키와 확장 프로그램, 시작 페이지 설정.</p></div>
-    <div class="card"><h3>공간 지도</h3><p class="muted">디스크를 한눈에 보는 지도. 종류, 정리 가능 여부, 지난 인덱스 대비 변화로 색을 입힙니다.</p></div>
-    <div class="card"><h3>클라우드</h3><p class="muted">iCloud Drive, Google Drive, Dropbox, OneDrive 폴더의 큰 파일.</p></div>
-    <div class="card"><h3>보관함</h3><p class="muted">Roomy가 옮긴 모든 것. 한 번의 클릭으로 원래 자리에 되돌립니다.</p></div>
+
+  <h2>가격</h2>
+  <p class="muted">구독은 없습니다. 무료로 시작하고, 필요하면 한 번만 결제합니다.</p>
+  <div class="plans">
+    <div class="plan">
+      <h3>무료</h3>
+      <div class="price">₩0</div>
+      <ul>
+        <li>모든 스캔과 검토</li>
+        <li>클린 · 앱 · 개인정보 · 클라우드 · 공간 지도 · 보관함</li>
+        <li>30일당 1GB 정리</li>
+        <li class="no">앱 제거</li>
+        <li class="no">공간 지도 실시간 갱신</li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <h3>Roomy Pro</h3>
+      <div class="price">US$29.99 <small>한 번 결제 · 영구</small></div>
+      <ul>
+        <li>무료 플랜의 모든 것</li>
+        <li>정리 한도 없음</li>
+        <li>앱 제거 (앱과 잔여물을 한 번에)</li>
+        <li>공간 지도 실시간 갱신</li>
+        <li>14일 무료 체험 · 가족 공유 지원</li>
+      </ul>
+    </div>
   </div>
-  <p>모든 분석은 Mac 안에서만 이루어집니다. Roomy는 파일 이름이나 내용을 어디에도 보내지 않습니다. <a href="privacy.html">개인정보 처리방침</a></p>
-  <p><strong>가격</strong> — 무료 플랜은 스캔·검토 전부와 30일당 1GB 정리를 제공합니다. Roomy Pro는 한 번 결제하는 영구 라이선스이며 14일 체험이 있습니다. Mac App Store에서 구매합니다.</p>
+  <p class="muted">가격은 국가별 App Store 기준으로 표시되며 환율에 따라 다를 수 있습니다. 구매와 환불은 Apple을 통해 처리됩니다.</p>
+
+  <h2>Mac 밖으로 나가는 것은 없습니다</h2>
+  <div class="trust">
+    <div class="card"><h3>분석은 Mac 안에서</h3><p>파일 이름이나 내용을 어디에도 보내지 않습니다.</p></div>
+    <div class="card"><h3>분석 데이터 없음</h3><p>사용 통계, 충돌 보고, 원격 측정이 전혀 없습니다.</p></div>
+    <div class="card"><h3>계정 없음</h3><p>가입도 로그인도 없습니다. 구매는 App Store 계정으로 처리됩니다.</p></div>
+    <div class="card"><h3>App Sandbox</h3><p>사용자가 허용한 폴더만 읽습니다. 권한은 언제든 끌 수 있습니다.</p></div>
+  </div>
+  <p class="faq-link"><a href="support.html">자주 묻는 질문과 지원 →</a> · <a href="privacy.html">개인정보 처리방침 →</a></p>
 </section>
 
-<section class="language" id="en" lang="en">
+<!-- ============================ English ============================ -->
+<section class="language" id="en" lang="en" data-title-en="Roomy Cleaner — Understand your Mac's storage, and reclaim it safely" hidden>
   <div class="hero">
-    <img src="icon.png" alt="Roomy icon">
-    <div>
+    <div class="copy">
       <h1>Understand your Mac's storage, and reclaim it safely</h1>
-      <p class="muted">No subscription · Reversible · No scare tactics</p>
+      <p class="tagline">No subscription · Reversible · No scare tactics</p>
+      <p class="lede">Roomy shows what is taking up space and cleans only what you have reviewed. Whatever it moves stays in the Vault for 30 days, so it can always be put back.</p>
+      <div class="cta">
+        <a class="badge" href="https://apps.apple.com/app/id6812335900" rel="noopener"><span class="apple">&#63743;</span><span><small>Download on the</small><strong>Mac App Store</strong></span></a>
+        <span class="note">Free to start · Pro is a one-time US$29.99 · Apple silicon · macOS 14 or later</span>
+      </div>
+    </div>
+    <img class="shot" src="img/en-01.jpg" width="1440" height="900" alt="Roomy Home: disk usage, reclaimable space, and suggestions">
+  </div>
+
+  <div class="pillars">
+    <div class="card"><h3>It explains before it removes</h3><p>Every item says what it is and why it is safe to clean. No "danger" warnings, no speed claims.</p></div>
+    <div class="card"><h3>Nothing goes without your review</h3><p>Only safe categories are selected by default, and nothing changes until you click Clean Up.</p></div>
+    <div class="card"><h3>Everything can be undone</h3><p>Files Roomy moves stay in the Vault for 30 days. One click puts them back where they were.</p></div>
+  </div>
+
+  <h2>What it finds</h2>
+  <div class="features">
+    <div class="feature">
+      <img src="img/en-02.jpg" width="1440" height="900" alt="Clean screen" loading="lazy">
+      <div class="text"><h3>Clean</h3><p>Caches, logs, Trash, Xcode build output, old downloads, large files, duplicates. Each item shows its size, date, and why it is safe to remove.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/en-03.jpg" width="1440" height="900" alt="Apps screen" loading="lazy">
+      <div class="text"><h3>Apps</h3><p>Installed apps with size and last use, leftovers from removed apps, and what starts at login, with its code-signature facts.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/en-04.jpg" width="1440" height="900" alt="Privacy screen" loading="lazy">
+      <div class="text"><h3>Privacy</h3><p>Per-browser caches, history, cookies, extensions, and start-page settings, selectable browser by browser.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/en-05.jpg" width="1440" height="900" alt="Space Map screen" loading="lazy">
+      <div class="text"><h3>Space Map</h3><p>Your whole disk as a map, coloured by kind, by what can be cleaned, or by what changed since last time.</p></div>
+    </div>
+    <div class="feature">
+      <img src="img/en-06.jpg" width="1440" height="900" alt="Vault screen" loading="lazy">
+      <div class="text"><h3>Vault</h3><p>Everything Roomy moved lives here. Restore it, empty it once you are sure, or let the retention period clear it.</p></div>
     </div>
   </div>
-  <p>Roomy finds what takes up space — caches, logs, old downloads, duplicates, files left behind by removed apps — and explains each item before anything is removed. Whatever you clean goes to the Vault for 30 days, so it can always be put back.</p>
-  <div class="points">
-    <div class="card"><h3>Clean</h3><p class="muted">Caches, logs, Trash, build output, large and duplicate files. Only safe items are selected by default.</p></div>
-    <div class="card"><h3>Apps</h3><p class="muted">Installed apps with size and last use, leftovers, and what starts at login, with its code-signature facts.</p></div>
-    <div class="card"><h3>Privacy</h3><p class="muted">Per-browser caches, history and cookies, extensions, and start-page settings.</p></div>
-    <div class="card"><h3>Space Map</h3><p class="muted">Your disk as a map, coloured by kind, cleanability, or change since the last index.</p></div>
-    <div class="card"><h3>Cloud</h3><p class="muted">The largest files in iCloud Drive, Google Drive, Dropbox and OneDrive folders.</p></div>
-    <div class="card"><h3>Vault</h3><p class="muted">Everything Roomy moved, restorable with one click.</p></div>
+
+  <h2>Pricing</h2>
+  <p class="muted">No subscription. Start free, pay once if you want more.</p>
+  <div class="plans">
+    <div class="plan">
+      <h3>Free</h3>
+      <div class="price">$0</div>
+      <ul>
+        <li>Every scan and review</li>
+        <li>Clean · Apps · Privacy · Cloud · Space Map · Vault</li>
+        <li>1 GB of cleanup per 30 days</li>
+        <li class="no">App uninstaller</li>
+        <li class="no">Live Space Map updates</li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <h3>Roomy Pro</h3>
+      <div class="price">US$29.99 <small>one-time · yours forever</small></div>
+      <ul>
+        <li>Everything in Free</li>
+        <li>Unlimited cleanup</li>
+        <li>App uninstaller (app and leftovers together)</li>
+        <li>Live Space Map updates</li>
+        <li>14-day free trial · Family Sharing</li>
+      </ul>
+    </div>
   </div>
-  <p>All analysis happens on your Mac. Roomy never sends file names or contents anywhere. <a href="privacy.html#en">Privacy policy</a></p>
-  <p><strong>Pricing</strong> — the free plan includes every scan and review plus 1 GB of cleanup per 30 days. Roomy Pro is a one-time purchase with a 14-day trial, sold through the Mac App Store.</p>
+  <p class="muted">Prices are shown in your local App Store currency and may vary. Purchases and refunds are handled by Apple.</p>
+
+  <h2>Nothing leaves your Mac</h2>
+  <div class="trust">
+    <div class="card"><h3>Analysis stays local</h3><p>File names and contents are never sent anywhere.</p></div>
+    <div class="card"><h3>No analytics</h3><p>No usage statistics, crash reporting, or telemetry.</p></div>
+    <div class="card"><h3>No account</h3><p>No sign-up, no login. Purchases go through your App Store account.</p></div>
+    <div class="card"><h3>App Sandbox</h3><p>Reads only the folders you allow. Access can be turned off any time.</p></div>
+  </div>
+  <p class="faq-link"><a href="support.html">FAQ and support →</a> · <a href="privacy.html">Privacy policy →</a></p>
 </section>
 </main>
-<footer>© 2026 Roomy · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></footer>
+<footer>© 2026 SKYFALL Incorporated · Roomy Cleaner · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="mailto:info@skyfall.studio">info@skyfall.studio</a></footer>
 </body>
 </html>
